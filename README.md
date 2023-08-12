@@ -26,18 +26,22 @@ docker-compose up -d --build
 ### Installation using SQL
 Enter Management Portal / System Explorer / SQL   
 Define this procedure   
+
 ````
-CREATE PROCEDURE %Zrcc.X()  
-LANGUAGE OBJECTSCRIPT  
-{   
- set %rcc=##class(%Routine).%New("%ZX.int")  
- set %rccline="x(%rcc) try {return $xecute(%rcc)} catch %rcc {return %rcc.DisplayString()}"  
- do %rcc.WriteLine(%rccline)   
+
+CREATE PROCEDURE %Zrcc.X()    
+LANGUAGE OBJECTSCRIPT     
+{     
+ set %rcc=##class(%Routine).%New("%ZX.int")    
+ set %rccline="x(%rcc) try {return $xecute(%rcc)} catch %rcc {return %rcc.DisplayString()}"    
+ do %rcc.WriteLine(%rccline)     
  do %rcc.Save()   
  quit %rcc.Compile()   
-}   
+}
+
 ````
 and execute it    
+
 ````
 CALL %Zrcc.X()
 ````
