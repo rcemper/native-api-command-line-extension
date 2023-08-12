@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Export generator="Cache" version="25">
-  <Document name="native-api-command-line.ZPM">
+  <Document name="nacl-server.ZPM">
     <Module>
-      <Name>native-api-command-line</Name>
+      <Name>nacl-server</Name>
 	  <Description>Use NativeAPI as command line</Description> 
       <Version>0.0.1</Version>
       <Packaging>module</Packaging>
