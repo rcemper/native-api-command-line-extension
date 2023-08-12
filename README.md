@@ -41,13 +41,6 @@ and execute it
 ````
 CALL %Zrcc.X()
 ````
-### Installation using NativeAPI
-First establish a connection    
-````
-set %rccon=##class(%Net.DB.DataSource).CreateConnection(serverIP,serverPORT,namespace,username,password)
-set %rccdb=%rccon.CreateIris()
-````
-Next run these lines for installation    
 
 ## How to Test it
 Use the related client demo for testing
