@@ -43,20 +43,7 @@ CALL %Zrcc.X()
 ````
 ### Installation using API  
 *WARNING:*  This is a rather dirty hack if there is no other chance   
-
-First conect to Server
-````
-    set %rccon=##class(%Net.DB.DataSource).CreateConnection(serverIP, serverPORT, namespace, username, password)
-    set %rccdb=%rccon.CreateIris()
-````
-Now we prepare the routine %ZX.int
-````
-set %rccline="x(%rcc) try {return $xecute(%rcc)} catch %rcc {return %rcc.DisplayString()}"
-do %rccdb.Set($h,"ROUTINE","%ZX",0)
-do %rccdb.Set(1,"ROUTINE","%ZX",0,0)
-do %rccdb.Set(%rccline,"ROUTINE","%ZX",0,1)
-set sc=%rccdb.ClassMethodValue("%Routine","CompileList","%ZX.int")
-````
+see special description
 
 ## How to Test it
 Use the related client demo for testing
