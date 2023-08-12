@@ -4,10 +4,11 @@
     <Module>
       <Name>nacl-server</Name>
 	  <Description>Use NativeAPI as command line</Description> 
-      <Version>0.0.1</Version>
+      <Version>0.0.2</Version>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
       <Resource Name="nacl.PKG"/>
+      <Resource Name="dc.MultiDz.GBL"/>
     </Module>
   </Document>
 </Export>
