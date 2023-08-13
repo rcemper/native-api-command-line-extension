@@ -26,10 +26,7 @@ docker-compose up -d --build
 ### Installation using SQL
 Enter Management Portal / System Explorer / SQL   
 Define this procedure   
-
-````
-
-CREATE PROCEDURE %Zrcc.X()    
+<p><pre>CREATE PROCEDURE %Zrcc.X()    
 LANGUAGE OBJECTSCRIPT     
 {     
  set %rcc=##class(%Routine).%New("%ZX.int")    
@@ -38,8 +35,7 @@ LANGUAGE OBJECTSCRIPT
  do %rcc.Save()   
  quit %rcc.Compile()   
 }
-
-````
+</pre></p>
 and execute it    
 
 ````
