@@ -7,7 +7,7 @@
       <Version>0.0.2</Version>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
-      <Resource Name="nacl.PKG"/>
+      <Resource Name="%ZX.INT"/>
       <Resource Name="dc.MultiDz.GBL"/>
     </Module>
   </Document>
