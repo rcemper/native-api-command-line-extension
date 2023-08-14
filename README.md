@@ -43,7 +43,7 @@ CALL %Zrcc.X()
 ````
 ### Installation using API  
 *WARNING:*  This is a rather dirty hack if there is no other chance   
-see special description
+see [special description](https://github.com/rcemper/native-api-command-line-extension/blob/main/Dirty_Install.MD)
 
 ## How to Test it
 Use the related client demo for testing
