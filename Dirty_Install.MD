@@ -1,7 +1,7 @@
 ### Installation using API  
 *WARNING:*  This is a rather dirty hack if there is no other chance   
 
-First conect to Server
+First, connect to Server
 ````
     set %rccon=##class(%Net.DB.DataSource).CreateConnection(serverIP, serverPORT, namespace, username, password)
     set %rccdb=%rccon.CreateIris()
@@ -9,6 +9,7 @@ First conect to Server
 Now we prepare the routine %ZX.int
 ````
 set %rccline="x(%rcc) try {return $xecute(%rcc)} catch %rcc {return %rcc.DisplayString()}"
+set
 do %rccdb.Set($h,"ROUTINE","%ZX",0)
 do %rccdb.Set(1,"ROUTINE","%ZX",0,0)
 do %rccdb.Set(%rccline,"ROUTINE","%ZX",0,1)
