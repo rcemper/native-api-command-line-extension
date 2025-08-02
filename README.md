@@ -50,3 +50,6 @@ Use the related client demo for testing
 
 [Article in DC](https://community.intersystems.com/post/remote-global-listing-using-nativeapi-objectscript-2)  
 
+### UPDATE     
+\#\#class(%Net.DB.Iris).Function() has changed and breaks with \<PROTECT\>  
+So instead, the function ClassMethodValue() is used to achieve the same result   
