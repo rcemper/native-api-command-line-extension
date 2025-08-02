@@ -6,8 +6,8 @@ services:
     command: --ISCAgent false
     restart: always
     ports:
-      - '41773:1972'
-      - '42773:52773'
+      - 61773:1972
+      - 62773:52773
       - 53773
     volumes:
       - ./:/rcc
