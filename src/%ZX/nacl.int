@@ -1,0 +1,8 @@
+ROUTINE %ZXnacl [Type=INT]
+x(%rcc) methodimpl {
+	try {
+		return $xecute(%rcc)}
+ 	catch %rcc {
+	 	return %rcc.DisplayString()} }
+zv() methodimpl {
+  quit $zv }
